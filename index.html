@@ -2,26 +2,27 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Tech - Ana Clara Aranha Nepomuceno</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio - Ana Clara Aranha Nepomuceno</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="container">
-            <nav class="barra-navegacao">
+            <nav class="barra-navegacao" aria-label="Navegação principal">
                 <div class="logo">Portfólio</div>
-                <div class="links-navegacao">
+
+                <div class="links-navegacao" id="navLinks">
                     <a href="#inicio">Início</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#cursos">Cursos</a>
                     <a href="#contato">Contato</a>
                 </div>
-                <div class="menu-mobile">
+
+                <div class="menu-mobile" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -30,173 +31,141 @@
         </div>
     </header>
 
-    <!-- Seção Inicial -->
-    <section id="inicio" class="principal">
-        <div class="container">
-            <div class="conteudo-principal">
-                <div class="texto-principal">
-                    <h1>Olá, eu sou <span class="texto-destaque">Ana Clara Aranha Nepomuceno</span></h1>
-                    <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
-                    <p>Atualmente cursando Análise e Desenvolvimento de Sistemas, sou apaixonada por tecnologia e busco oportunidades para aplicar meus conhecimentos em projetos práticos e inovadores.</p>
-                    <div class="botoes-acao">
-                        <a href="#projetos" class="botao botao-primario">Ver Projetos</a>
-                        <a href="#contato" class="botao botao-secundario">Entrar em Contato</a>
+    <main>
+        <section id="inicio" class="principal" aria-labelledby="titulo-inicio">
+            <div class="container">
+                <div class="conteudo-principal">
+                    <div class="texto-principal">
+                        <h1 id="titulo-inicio">Olá, eu sou <span class="texto-destaque">Ana Clara Aranha Nepomuceno</span>
+                        </h1>
+                        <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
+                        <p>Atualmente cursando Análise e Desenvolvimento de Sistemas, sou apaixonada por tecnologia e busco
+                            oportunidades para aplicar meus conhecimentos em projetos práticos e inovadores.</p>
+                        <div class="botoes-acao">
+                            <a href="#projetos" class="botao botao-primario">Ver Projetos</a>
+                            <a href="#contato" class="botao botao-secundario">Entrar em Contato</a>
+                        </div>
                     </div>
-                </div>
-                <div class="imagem-principal">
-                    <div class="container-foto">
-                        <div class="foto-perfil">
+
+                    <aside class="container-perfil" aria-hidden="false">
+                        <div class="imagem-perfil" role="img" aria-label="Ícone de perfil">
                             <i class="fas fa-user"></i>
-                            <p>Foto Aqui</p>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projetos -->
-    <section id="projetos" class="projetos">
-        <div class="container">
-            <h2 class="titulo-secao">Meus Projetos</h2>
-            <div class="grade-projetos">
-                <div class="cartao-projeto">
-                    <div class="imagem-projeto">
-                        <img src="Captura de tela 2025-10-16 163100.png" alt="Escola-Sunnydale-logo">
-                    </div>
-                    <div class="info-projeto">
-                        <h3>Escola-Sunnydale</h3>
-                        <p>Informações sobre a Escola-Sunnydale.</p>
-                        <div class="links-projeto">
-                            <a href="https://anaclaranepomuceno.github.io/Escola-Sunnydale/" class="link-projeto">
-                                <i class="fas fa-external-link-alt"></i> Ver Detalhes
-                            </a>
+        <section id="projetos" class="projetos" aria-labelledby="titulo-projetos">
+            <div class="container">
+                <h2 id="titulo-projetos" class="titulo-secao">Meus Projetos</h2>
+                <div class="grade-projetos">
+                    <article class="cartao-projeto">
+                        <div class="imagem-projeto">
+                            <img src="Captura de tela 2025-10-16 163100.png" alt="Escola Sunnydale">
                         </div>
-                    </div>
-                </div>
+                        <div class="info-projeto">
+                            <h3>Escola-Sunnydale</h3>
+                            <p>Projeto escolar com informações sobre a escola.</p>
+                            <div class="links-projeto">
+                                <a href="https://anaclaranepomuceno.github.io/Escola-Sunnydale/" target="_blank"
+                                    rel="noopener">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="cartao-projeto">
-                    <div class="imagem-projeto">
-                        <img src="image.png" alt="the marias">
-                    </div>
-                    <div class="info-projeto">
-                        <h3>The Marías</h3>
-                        <p>Site com informações sobre a banda The Marías.</p>
-                        <div class="links-projeto">
-                            <a href="https://anaclaranepomuceno.github.io/Atividades-NetAcademy/" class="link-projeto">
-                                <i class="fas fa-external-link-alt"></i> Ver Detalhes
-                            </a>
+                    <article class="cartao-projeto">
+                        <div class="imagem-projeto">
+                            <img src="image.png" alt="The Marias">
                         </div>
-                    </div>
-                </div>
+                        <div class="info-projeto">
+                            <h3>The Marías</h3>
+                            <p>Site informativo sobre a banda.</p>
+                            <div class="links-projeto">
+                                <a href="https://anaclaranepomuceno.github.io/Atividades-NetAcademy/" target="_blank"
+                                    rel="noopener">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="cartao-projeto">
-                    <div class="imagem-projeto">
-                        <img src="Captura de tela 2025-10-17 152635.png" alt="">
-                    </div>
-                    <div class="info-projeto">
-                        <h3>Descubra o seu mundo 🌎</h3>
-                        <p>Mapa interativo sobre pontos turísticos.</p>
-                        <div class="links-projeto">
-                            <a href="https://anaclaranepomuceno.github.io/-Descubra-Seu-Mundo/" class="link-projeto">
-                                <i class="fas fa-external-link-alt"></i> Ver Detalhes
-                            </a>
+                    <article class="cartao-projeto">
+                        <div class="imagem-projeto">
+                            <img src="Captura de tela 2025-10-17 152635.png" alt="Descubra o seu mundo">
                         </div>
-                    </div>
+                        <div class="info-projeto">
+                            <h3>Descubra o seu mundo</h3>
+                            <p>Mapa interativo com pontos turísticos.</p>
+                            <div class="links-projeto">
+                                <a href="https://anaclaranepomuceno.github.io/-Descubra-Seu-Mundo/" target="_blank"
+                                    rel="noopener">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Cursos -->
-    <section id="cursos" class="cursos">
-        <div class="container">
-            <h2 class="titulo-secao">Cursos e Certificações</h2>
-            <div class="grade-cursos">
-                <div class="cartao-curso">
-                    <div class="icone-curso">
+        <section id="cursos" class="cursos" aria-labelledby="titulo-cursos">
+            <div class="container">
+                <h2 id="titulo-cursos" class="titulo-secao">Cursos e Certificações</h2>
+                <div class="grade-cursos">
+                    <div class="cartao-curso">
                         <i class="fas fa-laptop-code"></i>
+                        <h3>Técnico em Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Instituição: Senac — Conclusão: Dezembro 2026</p>
                     </div>
-                    <h3>Técnico em Análise e Desenvolvimento de Sistemas</h3>
-                    <p class="instituicao-curso">Instituição: Senac</p>
-                    <p class="data-curso">Conclusão: Dezembro 2026</p>
-                    <p>Curso com foco em lógica de programação, desenvolvimento web (front-end e back-end) e banco de dados.</p>
-                </div>
-
-                <div class="cartao-curso">
-                    <div class="icone-curso">
+                    <div class="cartao-curso">
                         <i class="fas fa-code"></i>
+                        <h3>Programação Web</h3>
+                        <p>Instituição: Digital Innovation — Concluído: Agosto 2025</p>
                     </div>
-                    <h3>Programação Web</h3>
-                    <p class="instituicao-curso">Instituição: Digital Innovation</p>
-                    <p class="data-curso">Concluído: Agosto 2025</p>
-                    <p>Foco em tecnologias front-end como HTML, CSS, JavaScript e frameworks modernos como React.</p>
-                </div>
-
-                <div class="cartao-curso">
-                    <div class="icone-curso">
+                    <div class="cartao-curso">
                         <i class="fas fa-cogs"></i>
+                        <h3>Programação de Sistemas</h3>
+                        <p>Instituição: Senac — Concluído: Dezembro 2025</p>
                     </div>
-                    <h3>Programação de Sistemas</h3>
-                    <p class="instituicao-curso">Instituição: Senac</p>
-                    <p class="data-curso">Concluído: Dezembro 2025</p>
-                    <p>Fundamentos de computação, algoritmos e estruturas de dados com foco em Python.</p>
-                </div>
-
-                <div class="cartao-curso">
-                    <div class="icone-curso">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <h3>Inglês</h3>
-                    <p class="instituicao-curso">Instituição: CILC</p>
-                    <p class="data-curso">Concluído: Julho 2021</p>
-                    <p>Curso de inglês com foco em conversação e escrita, atingindo o nível avançado/fluente.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Rodapé -->
-    <footer id="contato">
+    <footer id="contato" aria-labelledby="titulo-contato">
         <div class="container">
             <div class="conteudo-rodape">
                 <div class="coluna-rodape">
-                    <h3>Contato</h3>
-                    <p><i class="fas fa-envelope"></i> Email: anaclaraaranhanepomuceno@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> Telefone: (61) 98416-9893</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Localização: Brasília, Brasil</p>
+                    <h3 id="titulo-contato">Contato</h3>
+                    <p><i class="fas fa-envelope"></i> anaclaraaranhanepomuceno@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (61) 98416-9893</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Brasília, Brasil</p>
                     <div class="links-sociais">
-                        <a href="https://br.linkedin.com/in/ana-clara-aranha-nepomuceno-784151218" class="link-social" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/AnaClaraNepomuceno" class="link-social" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://br.linkedin.com/in/ana-clara-aranha-nepomuceno-784151218" target="_blank"
+                            rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/AnaClaraNepomuceno" target="_blank" rel="noopener"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
 
                 <div class="coluna-rodape">
                     <h3>Links Rápidos</h3>
-                    <div class="links-rodape">
-                        <a href="#inicio">Início</a>
-                        <a href="#projetos">Projetos</a>
-                        <a href="#cursos">Cursos</a>
-                        <a href="#contato">Contato</a>
-                    </div>
+                    <a href="#inicio">Início</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#cursos">Cursos</a>
+                    <a href="#contato">Contato</a>
                 </div>
 
                 <div class="coluna-rodape">
                     <h3>Habilidades</h3>
-                    <div class="links-rodape">
-                        <a href="#projetos">Desenvolvimento Frontend</a>
-                        <a href="#projetos">Desenvolvimento Backend</a>
-                        <a href="#projetos">Design UI/UX</a>
-                        <a href="#projetos">DevOps</a>
-                    </div>
+                    <a href="#projetos">Frontend</a>
+                    <a href="#projetos">Backend</a>
+                    <a href="#projetos">Design UI/UX</a>
                 </div>
             </div>
+
             <div class="direitos">
                 <p>&copy; 2025 Ana Clara Aranha. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
