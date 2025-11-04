@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
@@ -10,7 +9,6 @@
     --cor-cabecalho: #1a1a38;      
     --branco: #FFFFFF;
 }
-
 
 * {
     margin: 0;
@@ -35,9 +33,6 @@ body {
     margin: 0 auto;
 }
 
-/* ============================================
-   CABEÇALHO E NAVEGAÇÃO
-============================================ */
 header {
     background-color: var(--cor-cabecalho);
     padding: 1rem 0;
@@ -76,7 +71,6 @@ header {
     color: var(--cor-primaria);
 }
 
-
 .menu-mobile {
     display: none;
     flex-direction: column;
@@ -90,7 +84,6 @@ header {
     margin: 4px 0;
     transition: 0.3s;
 }
-
 
 .principal {
     display: flex;
@@ -158,7 +151,6 @@ header {
     color: var(--branco);
 }
 
-
 .container-perfil {
     width: 300px;
     height: 300px;
@@ -182,7 +174,6 @@ header {
 .imagem-perfil i {
     font-size: 8rem;
 }
-
 
 .grade-projetos {
     display: grid;
@@ -238,7 +229,6 @@ header {
     color: var(--branco);
 }
 
-
 .grade-cursos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -258,7 +248,6 @@ header {
     color: var(--cor-primaria);
     margin-bottom: 15px;
 }
-
 
 footer {
     background-color: var(--cor-cabecalho);
@@ -306,11 +295,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ============================================
-   RESPONSIVIDADE
-============================================ */
-
-/* Tablets */
 @media (max-width: 992px) {
     .conteudo-principal {
         flex-direction: column;
@@ -327,7 +311,6 @@ footer {
     }
 }
 
-/* Celulares */
 @media (max-width: 768px) {
     .links-navegacao {
         display: none;
@@ -359,7 +342,6 @@ footer {
     }
 }
 
-/* Telas pequenas */
 @media (max-width: 500px) {
     body {
         font-size: 14px;
