@@ -342,104 +342,104 @@ footer {
     color: var(--secondary-color);
     padding: 5px 10px;
     border-radius: 5px;
-    border-radius: 5px;
 }
+
 /* Responsive */
-/* Responsive */h: 992px) {
 @media (max-width: 992px) {
-    .hero-content {rid-template-columns -> estava inválido porque .hero-content é flex */
+    .hero-content {
         /* antes: grid-template-columns -> estava inválido porque .hero-content é flex */
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .hero-text {
-    .hero-text {00%;
         width: 100%;
     }
+
     .hero-text p {
-    .hero-text p {auto 30px;
         margin: 0 auto 30px;
     }
+
     .cta-buttons {
-    .cta-buttons {ntent: center;
         justify-content: center;
-    }
+    }ontent: center;
 }
+
 @media (max-width: 768px) {
-@media (max-width: 768px) {
-    .nav-links { none;
+    .nav-links {768px) {
         display: none;
     }
+   }
     .mobile-menu {
-    .mobile-menu {lex;nu {
-        display: flex;
+        display: flex;nu {
     }
+
     .hero-text h1 {
-    .hero-text h1 {2.8rem;
-        font-size: 2.8rem;rem;
+        font-size: 2.8rem;
+    }       font-size: 2.8rem;
     }
     .hero-text h2 {
-    .hero-text h2 {1.8rem;
         font-size: 1.8rem;
-    }
+    }8rem;
+
     .profile-container {
-    .profile-container { .profile-container {
-        width: 280px;;: 280px;
-        height: 280px;
+        width: 280px;    .profile-container {
+        height: 280px;: 280px;
     }
+   }
     .profile-image {
-    .profile-image {;e-image {
-        width: 260px;;
+        width: 260px;e-image {
         height: 260px;
     }
+
     .projects-grid, .courses-grid {
-    .projects-grid, .courses-grid {urses-grid {
-        grid-template-columns: 1fr;1fr;
+        grid-template-columns: 1fr;urses-grid {
+    }       grid-template-columns: 1fr;
     }
     .modal-links {
-    .modal-links {tion: column;
         flex-direction: column;
+    }ion: column;
+}
+
+@media (max-width: 576px) {
+    .hero {@media (max-width: 576px) {
+        padding: 150px 0 80px;
+    }x;
+
+    .hero-text h1 {
+        font-size: 2.2rem;{
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;    .hero-text h2 {
+    }
+
+    .cta-buttons {
+        flex-direction: column;cta-buttons {
+        gap: 15px;        flex-direction: column;
+    }
+
+    .profile-container {
+        width: min(250px, 50vw);    .profile-container {
+        height: min(250px, 50vw);250px, 50vw);
+    } 50vw);
+
+    .profile-image {
+        width: calc(100% - 20px);{
+        height: calc(100% - 20px); 20px);
+        font-size: 4rem;   height: calc(100% - 20px);
+    }        font-size: 4rem;
+
+    .section-title {
+        font-size: 2rem;
+    }   font-size: 2rem;
+    }
+    /* antes: grid-template-columns em .footer-content (era inútil porque era display:flex) */
+    .footer-content {mplate-columns em .footer-content (era inútil porque era display:flex) */
+        display: flex;
+        flex-direction: column;   display: flex;
+        align-items: center;        flex-direction: column;
+        gap: 1.5rem;
     }
 }
-@media (max-width: 576px) {
-@media (max-width: 576px) {h: 576px) {
-    .hero {ding: 150px 0 80px;
-        padding: 150px 0 80px;
-    }
-    .hero-text h1 {
-    .hero-text h1 {2.2rem;{
-        font-size: 2.2rem;
-    }
-    .hero-text h2 {
-    .hero-text h2 {1.5rem;    .hero-text h2 {
-        font-size: 1.5rem;
-    }
-    .cta-buttons {
-    .cta-buttons {tion: column;cta-buttons {
-        flex-direction: column;direction: column;
-        gap: 15px;
-    }
-    .profile-container {
-    .profile-container {, 50vw);    .profile-container {
-        width: min(250px, 50vw);;250px, 50vw);
-        height: min(250px, 50vw);
-    }
-    .profile-image {
-    .profile-image {100% - 20px);{
-        width: calc(100% - 20px);; 20px);
-        height: calc(100% - 20px); calc(100% - 20px);
-        font-size: 4rem;4rem;
-    }
-    .section-title {
-    .section-title {rem;
-        font-size: 2rem;
-    }
-    /* antes: grid-template-columns em .footer-content (era inútil porque era display:flex) */
-    /* antes: grid-template-columns em .footer-content (era inútil porque era display:flex) */
-    .footer-content {;
-        display: flex;: column;   display: flex;
-        flex-direction: column;     flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }}
